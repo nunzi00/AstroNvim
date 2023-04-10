@@ -236,3 +236,11 @@ cmd(
 cmd("AstroRollback", function() require("astronvim.utils.updater").rollback() end, { desc = "Rollback AstroNvim" })
 cmd("AstroUpdate", function() require("astronvim.utils.updater").update() end, { desc = "Update AstroNvim" })
 cmd("AstroVersion", function() require("astronvim.utils.updater").version() end, { desc = "Check AstroNvim Version" })
+
+vim.cmd [[
+  augroup _php_settings
+    autocmd!
+    autocmd FileType php :setlocal sw=4 ts=4 sts=4
+  augroup end
+]]
+vim.cmd([[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]])

@@ -18,6 +18,7 @@ return {
           package_pending = "⟳",
         },
       },
+      automatic_setup = true,
     },
     config = require "plugins.configs.mason",
   },
