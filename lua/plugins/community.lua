@@ -8,6 +8,8 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.json" },
-  { import = "astrocommunity.pack.bash" }
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.astro" },
+  { import = "astrocommunity.git.git-blame-nvim" },
   -- ... import any community contributed plugins here
 }
